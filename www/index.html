@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+       
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css":>
+        <script src="lib/jquery.min.js"></script> 
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script> 
+        <script src="js/index.js"></script>
+        <title>Gestionaire de taches</title>
+    </head>
+   
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1> Gestion des taches </h1>
+            </div>
+            <div role="main" class="ui-content">
+                <label for="tache">Ajouter une taches</label>
+                <input type="text" id="tache">
+                <br><input type="button" value="Ajouter" onclick="ajouterTache()"><br>
+                <br><input type="button" value="Réinitialiser" onclick="reinitialiser()">
+                
+                
+                
+                <ul id="taskList" data-role="listview" data-inset="true">
+                    <li>Tache 1</li>
+                    <li>Tache 2</li>
+                    <li>Tache 3</li>
+                    <li>Tache 4</li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+
+            <h1>M1IADB  Octobre 2022</h1>
+
+            </div>
+
+        </div>
+    </body>
+</html>
